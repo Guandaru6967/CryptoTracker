@@ -20,14 +20,14 @@ public class PaymentController:ControllerBase
                 configuration=_configuration;
         }
         [HttpPost("deposit")]
-        public async Task<IActionResult> Deposit(string name)
+        public  ActionResult<String> Deposit(string name)
         {
                 
                 return Ok("Deposti Successfull .");
 
         }
         [HttpPost("withdraw")]
-        public async Task<IActionResult> Withdraw(string name)
+        public  ActionResult<String> Withdraw(string name)
         {
                 
                 return Ok("Withdrawal Successfull. ");
